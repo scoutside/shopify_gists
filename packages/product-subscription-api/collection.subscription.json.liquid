@@ -1,0 +1,17 @@
+{% comment %}
+  /templates/collection.subscription.json.liquid
+{% endcomment %}
+
+{% layout none %}
+
+{
+  "collection": {{ collection | json }},
+  {% paginate collection.products by 50 %}
+    "products": [
+    {% for product in collection.products %}
+      {% include 'product-subscription-json', product: product %}
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ]
+  {% endpaginate %}
+}

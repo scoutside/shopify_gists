@@ -1,0 +1,60 @@
+{% comment %}
+  /snippets/subscription-product-data.liquid
+  
+  <!-- EXAMPLE 1 -->
+  """
+  If you want direct access on the current page.
+  """
+
+  <script type="application/json" data-product-subscription-json>{% include 'product-subscription-json', product: product %}</script>
+  <script>
+    var product_data = JSON.parse($('[data-product-subscription-json]').text());
+  </script>
+  <!-- END EXAMPLE 1 -->
+
+  <!-- EXAMPLE 2 -->
+  """
+  If you want indirect access from any other page.
+  On an alternate template view: ie. product.subscription.json.liquid
+
+  Can query this API:
+  <script>
+    var handle = 'burton-snowboard'
+    jQuery.ajax({
+      url:'/products/' + handle + '?view=subscription.json',
+      success:function(unparsed_json){
+        var product_data = JSON.parse(unparsed_json)
+        console.log('This just in from product.subscription.json:', product_data)
+      }
+    })
+  </script>
+  """
+
+  {% layout none %}
+  {% include 'product-subscription-json', product: product %}
+  <!-- END EXAMPLE 2 -->
+{% endcomment %}
+
+{% assign product_json = product | json %}
+
+{% assign product_subscription_metafields_json = product.metafields.subscriptions | json %}
+{% assign product_subscription_metafields = '{ "subscription_metafields": ' | append: product_subscription_metafields_json | append: ',' %}
+
+{% assign variants_json = '[' %}
+{% for variant in product.variants %}
+  {% assign variant_json = variant | json %}
+  {% assign variant_subscription_metafields_json = variant.metafields.subscriptions | json %}
+  {% assign variant_subscription_metafields = '{ "subscription_metafields": ' | append: variant_subscription_metafields_json | append: ',' %}
+  {% assign variant_json = variant_json | remove_first: '{' | prepend: variant_subscription_metafields %}
+  {% assign variants_json = variants_json | append: variant_json %}
+  {% unless forloop.last %}
+    {% assign variants_json = variants_json | append: ',' %}
+  {% endunless %}
+{% endfor %}
+{% assign variants_json = variants_json | append: ']' %}
+{% assign _variants = '{ "_variants": ' | append: variants_json | append: ',' %}
+
+{% assign product_json = product_json | remove_first: '{' | prepend: _variants %}
+{% assign product_json = product_json | remove_first: '{' | prepend: product_subscription_metafields %}
+
+{{ product_json }}
