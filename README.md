@@ -15,7 +15,7 @@ Each package has its own `README` and documentation describing usage.
 
 | package |     |     |
 | ------- | --- | --- |
-| address | [directory](packages/product-subscription-api) | ![version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000) |
+| product-subscription-api | [directory](packages/product-subscription-api) | ![version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000) |
 
 ## Want to contribute?
 
