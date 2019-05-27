@@ -17,10 +17,6 @@ Each package has its own `README` and documentation describing usage.
 | ------- | --- | --- |
 | product-subscription-api | [directory](packages/product-subscription-api) | ![version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000) |
 
-## Want to contribute?
-
-Check out our [Contributing Guide](./.github/CONTRIBUTING.md)
-
 ## Questions?
 
 For Scoutside Folks, you can reach out to us in Slack on the `#devteam` channel. For external inquiries, we welcome bug reports, enhancements, and feature requests via Github issues.
