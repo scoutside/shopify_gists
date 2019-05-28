@@ -17,6 +17,12 @@ Each package has its own `README` and documentation describing usage.
 | ------- | --- | --- |
 | product-subscription-api | [directory](packages/product-subscription-api) | ![version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000) |
 
+### Other resources
+
+| user |     |     |
+| ---- | --- | --- |
+| freakdesign | [directory](https://github.com/freakdesign/Shopify-code-snippets) | [![stars](http://githubbadges.com/star.svg?user=freakdesign&repo=Shopify-code-snippets)](https://github.com/freakdesign/Shopify-code-snippets/github) |
+
 ## Questions?
 
 For Scoutside Folks, you can reach out to us in Slack on the `#devteam` channel. For external inquiries, we welcome bug reports, enhancements, and feature requests via Github issues.
@@ -25,4 +31,4 @@ For Scoutside Folks, you can reach out to us in Slack on the `#devteam` channel.
 
 MIT &copy; [Scoutside](https://scoutside.com/), see [LICENSE.md](LICENSE.md) for details.
 
-<a href="http://www.scoutside.com/"><img src="https://cdn.shopify.com/s/files/1/1641/7521/files/Light_Blue_pico.png?v=1539108791" alt="Scoutside" width="200" /></a>
+<a href="http://www.scoutside.com/"><img src="https://cdn.shopify.com/s/files/1/1641/7521/files/Light_Blue_pico.png?v=1539108791" alt="Scoutside" width="25" /></a>
