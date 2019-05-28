@@ -19,9 +19,9 @@ Each package has its own `README` and documentation describing usage.
 
 ### Other resources
 
-| user |     |     |
-| ---- | --- | --- |
-| freakdesign | [directory](https://github.com/freakdesign/Shopify-code-snippets) | [![stars](http://githubbadges.com/star.svg?user=freakdesign&repo=Shopify-code-snippets)](https://github.com/freakdesign/Shopify-code-snippets/github) |
+| user | category |     |     |
+| ---- | -------- | --- | --- |
+| freakdesign | Shopify Snippets | [directory](https://github.com/freakdesign/Shopify-code-snippets) | [![stars](http://githubbadges.com/star.svg?user=freakdesign&repo=Shopify-code-snippets)](https://github.com/freakdesign/Shopify-code-snippets/github) |
 
 ## Questions?
 
