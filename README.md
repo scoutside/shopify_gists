@@ -21,7 +21,9 @@ Each package has its own `README` and documentation describing usage.
 
 | user | category |     |     |
 | ---- | -------- | --- | --- |
-| freakdesign | Shopify Snippets | [directory](https://github.com/freakdesign/Shopify-code-snippets) | [![stars](http://githubbadges.com/star.svg?user=freakdesign&repo=Shopify-code-snippets)](https://github.com/freakdesign/Shopify-code-snippets/github) |
+| freakdesign | Liquid Snippets + other | [directory](https://github.com/freakdesign/Shopify-code-snippets) | [![stars](http://githubbadges.com/star.svg?user=freakdesign&repo=Shopify-code-snippets)](https://github.com/freakdesign/Shopify-code-snippets/github) |
+| vikrantnegi | Liquid Snippets | [directory](https://github.com/vikrantnegi/shopify-code-snippets) | [![stars](http://githubbadges.com/star.svg?user=vikrantnegi&repo=shopify-code-snippets)](https://github.com/vikrantnegi/shopify-code-snippets/github) |
+| mateuspv | VSCode Schema Ext. | [directory](https://github.com/mateuspv/shopify-schema-settings-snippets) | [![stars](http://githubbadges.com/star.svg?user=mateuspv&repo=shopify-schema-settings-snippets)](https://github.com/mateuspv/shopify-schema-settings-snippets/github) |
 
 ## Questions?
 
