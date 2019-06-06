@@ -32,3 +32,7 @@ imgURL('//cdn.shopify.com/s/files/1/0087/0462/products/shirt14.jpeg?v=1309278311
 // outputs
 '//cdn.shopify.com/s/files/1/0087/0462/products/shirt14_medium.jpeg?v=1309278311'
 ```
+
+
+##### `Credit`
+[https://gist.github.com/DanWebb/cce6ab34dd521fcac6ba](https://gist.github.com/DanWebb/cce6ab34dd521fcac6ba)
