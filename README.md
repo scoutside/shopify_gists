@@ -18,6 +18,7 @@ Each package has its own `README` and documentation describing usage.
 | product-subscription-api | [directory](packages/product-subscription-api) | ![version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000) | 
 | image-resize-js | [directory](packages/image-resize-js) | ![version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000) |
 | load-custom-fonts | [directory](packages/load-custom-fonts) | ![version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000) |
+| noindex | [directory](packages/noindex) | ![version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000) |
 
 ### Other resources
 

@@ -1,0 +1,3 @@
+{%- capture noindex -%}{% section 'no-index' %}{%- endcapture -%}
+{% assign noindex = noindex | strip_html | strip | strip_newlines %}
+{% if noindex == 'true' %}<meta name="robots" content="noindex">{% endif %}

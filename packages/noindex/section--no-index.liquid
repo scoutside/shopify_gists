@@ -1,0 +1,42 @@
+{% comment %}
+  Section:
+  A more robust option for hiding specific pages from google.
+{% endcomment %}
+
+{% for block in section.blocks %}
+  {% if canonical_url contains block.settings.url %}
+    <noscript>true</noscript>
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% schema %}
+  {
+    "name": "No Index Pages",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Link/Pages added to this list will have a meta tag placed in the code instructing Google NOT to index the page."
+     }
+    ],
+    "blocks": [
+      {
+        "name": "no index page",
+        "type": "no_index_page",
+        "settings": [
+          {
+            "id": "title",
+            "type": "text",
+            "label": "Label",
+            "info": "(optional)"
+          },
+          {
+            "id": "url",
+            "type": "url",
+            "label": "Url"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
